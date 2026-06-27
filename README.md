@@ -151,7 +151,7 @@ and mention in which cases it needs to be done after splitting (in particular, m
         - Drop columns with high missing rates (e.g., >30–50%), especially if the column isn't crucial, or if there's high correlation with other features.
         - Then handle rows with missing values (drop or impute):
             - If you're confident the data will be available at prediction time (i.e., some rows are missing info now, but you'll have complete data when your model is used to make predictions with real-world data) → dropping those rows may be the easiest option. Note: after removing rows with missing data, check that it will not cause major data loss or bias (e.g., for classification, check that dropping rows doesn't create class imbalance).
-            - If you think the data may not be available at prediction time → use imputation instead, since dropping isn't an option in production.
+            - If you think the data may not be available at prediction time → use imputation.
             - If in doubt → use imputation (explained below)
     - b) Imputation (replacing missing values with estimated ones). General rules of thumb:
         - If few missing values & categorical: use the mode
