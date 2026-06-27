@@ -10,8 +10,10 @@ The purpose of this document is to offer a beginner-friendly, end-to-end playboo
 In this guide, you'll find multiple options with the most common techniques, practical rules of thumb, common pitfalls, and some code snippets (mostly pandas/scikit-learn).
 
 A few things to keep in mind:
-- Training a model is an iterative process, not a strict linear one (this guide aims to provide a sequence of steps to follow but sometimes you may need to go back and forth).
-- The guide includes some quick rules of thumb with values that can be used as a reference. Take them with a pinch of salt. Every project is different, make sure to apply your own criteria.
+- Training a Machine Learning model is not a linear process (it is an iterative process). In this document we try to offer a simple step-by-step guide, but sometimes you may need to iterate back and forth.
+- The guide includes some quick rules of thumb with values that can be used as a reference. Use them as guidelines rather than strict limits.
+- Every project is different. You may need to adapt to your specific case, apply your own criteria, and do things in a different way.
+
 <br />
 Ready to dive in? Let's go! 🚀
 
