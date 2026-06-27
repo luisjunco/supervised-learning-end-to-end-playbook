@@ -1,9 +1,22 @@
 
-
-# The Supervised Learning Workflow: Beginner-friendly End-to-End Playbook
-
+# Supervised Learning End-to-End Playbook
 
 <br />
+
+## About this guide
+
+The purpose of this document is to offer a beginner-friendly, end-to-end playbook for supervised learning projects — a structured, replicable set of steps with practical rules of thumb to guide decisions along the way.
+
+In this guide, you'll find multiple options with the most common techniques, practical rules of thumb, common pitfalls, and some code snippets (mostly pandas/scikit-learn).
+
+A few things to keep in mind:
+- Training a model is an iterative process, not a strict linear one (this guide aims to provide a sequence of steps to follow but sometimes you may need to go back and forth).
+- The guide includes some quick rules of thumb with values that can be used as a reference. Take them with a pinch of salt. Every project is different, make sure to apply your own criteria.
+<br />
+Ready to dive in? Let's go! 🚀
+
+
+<br /><br /><br />
 
 
 ## 1. Define the Problem 🎯
