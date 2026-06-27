@@ -149,8 +149,10 @@ and mention in which cases it needs to be done after splitting (in particular, m
 - Handle Missing Values. Common options to handle missing data:
     - a) Removal (dropping rows or columns). Typically:
         - Drop columns with high missing rates (e.g., >30–50%), especially if the column isn't crucial, or if there's high correlation with other features.
-        - Then handle rows with missing values (drop or impute), based on what's left.
-        - After removing rows with missing data, check that it will not cause major data loss or bias (in particular, check that the target class distribution remains similar than the target in the original dataset to make sure you're not creating class imbalance).
+        - Then handle rows with missing values (drop or impute):
+            - If you're confident the data will be available at prediction time (i.e., some rows are missing info now, but you'll have complete data when your model is used to make predictions with real-world data) → dropping those rows may be the easiest option. Note: after removing rows with missing data, check that it will not cause major data loss or bias (e.g., for classification, check that dropping rows doesn't create class imbalance).
+            - If you think the data may not be available at prediction time → use imputation instead, since dropping isn't an option in production.
+            - If in doubt → use imputation (explained below)
     - b) Imputation (replacing missing values with estimated ones). General rules of thumb:
         - If few missing values & categorical: use the mode
         - If few missing values & numerical & normal distribution: use the mean
