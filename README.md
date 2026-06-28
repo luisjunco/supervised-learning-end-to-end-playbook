@@ -61,17 +61,16 @@ Ready to dive in? Let's go! 🚀
     - `df['column_name'].value_counts()` → shows category frequencies; useful for detecting dominant classes, rare labels, or messy/inconsistent values.
     - Visualize data using plots (histograms, bar plots, scatter plots, box plots) → understand distributions, relationships, and outliers
 - Identify correlations between features (e.g., using a correlation heatmap) → detect multicollinearity (mostly for numeric features)
-- Check if you have enough data for Machine Learning
-    - Basic rule of thumb:
-        - Aim for at least 10–20 samples per feature for traditional ML models.
-        - Example: 50 features → ideally 500–1,000 training samples at the very least
-        - This is a minimum guideline, not a guarantee of good performance. 
-        - Many problems require much more data, especially when the task is complex, the model is complex, or data quality is low.
-    - You can find further guidelines on data requirements [here](https://claude.ai/share/0b710685-ad38-4cd9-bbb9-9d2e173dddce)
+- Check if you have enough data for Machine Learning:
+    - In this link, you can find a set of practical rules of thumb for determining the minimum number of samples needed to train classic machine learning models: https://chatgpt.com/share/6a40fea6-e494-83eb-aed6-c25f76321a8d
+    - Important: 
+        - Use these values as a reference, not as strict rules!
+        - The actual number of samples required depends on many factors, including data quality, feature complexity, class balance, and the specific machine learning algorithm.
     - If the data does not seem enough, consider gathering more data or training a simple baseline model to check whether performance is acceptable.
     <!-- 
     Further notes on data requirements:
     - https://github.com/luisjunco/DS-ML-Course-Ironhack/blob/main/b%20-%20thins-learned/ML-supervised-learning/0b%20-%20ML%20Data%20Requirement%20Guidelines.ipynb
+    - https://claude.ai/share/0b710685-ad38-4cd9-bbb9-9d2e173dddce
     -->
 - Finally, summarize insights. Either write down a few key takeaways or at least do a quick mental recap with the most important things. For example:
     - What's the target variable
