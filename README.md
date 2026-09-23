@@ -336,7 +336,7 @@ Data-Level Methods (resampling the data):
 
 Algorithm-Level Methods (adjusting the model):
 - a) Class weights — penalize mistakes on the minority class more (e.g., in scikit-learn many models have an option `class_weight='balanced'` to balance class weights)
-b) Threshold tuning — define the minority class as the positive class (the class for which the model outputs a probability and applies the decision cutoff) and adjust the probability threshold (e.g., from 0.5 to 0.3). Lowering the threshold increases minority class predictions (higher recall), while raising it makes the model more conservative.
+- b) Threshold tuning — define the minority class as the positive class (the class for which the model outputs a probability and applies the decision cutoff) and adjust the probability threshold (e.g., from 0.5 to 0.3). Lowering the threshold increases minority class predictions (higher recall), while raising it makes the model more conservative.
 - c) Combine "Class weights" + "Threshold tuning" — a solid option for severe imbalance.
 - Notes:
     - If you decide to apply algorithm-level methods, the moment to do it will be when you train models and/or during Hyperparameter Tuning.
